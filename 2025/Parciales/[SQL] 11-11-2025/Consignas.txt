@@ -1,0 +1,9 @@
+1) Clientes con items caros: Listar DNI, nombre, apellido, dirección y localidad de clientes con pedidos que incluyan algún ítem con precioUnitario (al momento del pedido) mayor a $100.000.
+
+2) Items exclusivos de 2025: Listar datos de ítems que se hayan pedido solamente durante el año 2025.
+
+3) Borrar Cliente: Borrar los pedidos del cliente con DNI 40123456.
+
+4) Items populares Octubre 2025: Listar denominación, precio, stock y cantidad pedida en Octubre 2025 para ítems cuya cantidad acumulada en ese mes sea mayor a 100.
+
+5) Clientes La Plata sin pedidos: Reportar DNI, nombre, apellido y teléfono de clientes de 'La Plata' que no tengan pedidos en el primer semestre de 2025. Ordenar por apellido y nombre.
