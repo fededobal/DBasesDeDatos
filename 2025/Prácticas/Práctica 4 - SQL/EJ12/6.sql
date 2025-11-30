@@ -1,0 +1,9 @@
+DELETE FROM Atencion A
+WHERE EXISTS (
+  SELECT *
+  FROM Cliente C
+  WHERE C.DNI = 22222222 AND A.nroCliente = C.nroCliente
+);
+
+DELETE FROM Cliente C
+WHERE DNI = 22222222;
