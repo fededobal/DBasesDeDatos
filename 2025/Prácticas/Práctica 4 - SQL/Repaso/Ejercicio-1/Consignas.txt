@@ -1,0 +1,17 @@
+MODELO FISICO:
+Chef (idChef, nombre, especialidad, sueldo)
+Plato (idPlato, nombre, precio, categoria)
+Ingrediente (idIng, nombre, tipo)
+Receta (idPlato [FK], idIng [FK], cantidad_gramos) -> Qué ingredientes lleva cada plato.
+HistorialCocina (idChef [FK], idPlato [FK], fecha) -> Qué chef cocinó qué plato y cuándo.
+
+CONSIGNAS:
+1. Agregación compleja y filtro: Listar el nombre del plato, su precio y la cantidad total de gramos de ingredientes que lleva. Mostrar solo aquellos platos que en total pesen más de 400 gramos (sumando todos sus ingredientes).
+
+2. División Relacional (El "TODOS"): Listar nombre y especialidad de los Chefs que hayan cocinado TODOS los platos registrados en el sistema (es decir, no existe plato que no hayan cocinado).
+
+3. División / Exclusión (El "SOLO"): Listar el nombre de los Chefs que hayan cocinado SOLAMENTE platos de la categoría 'Principal' (pueden haber cocinado uno o varios, pero nunca una 'Entrada' o 'Postre').
+
+4. Exclusión Temporal: Listar los Chefs que cocinaron algún plato durante el año 2023, pero que NO tienen ningún registro de cocina durante el año 2024.
+
+5. Consulta Anidada "Dura": Listar el nombre de los ingredientes que forman parte de platos que han sido cocinados por más de 2 chefs diferentes. (Es decir: Ingrediente -> Plato -> Cocinado por > 2 Chefs).
